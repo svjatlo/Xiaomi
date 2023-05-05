@@ -1,0 +1,346 @@
+.header{
+  padding-top: 5px;
+  margin-bottom: 100px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo{
+    margin-right: 30px;
+  }
+  &__logo-img{
+    max-width: 160px;
+    width: 100%;
+  }
+  &__menu{
+    margin-right: 70px;
+  }
+  &__menu-list{
+    display: flex;
+    align-items: center;
+
+  }
+  &__menu-link{
+    transition: all 0.3s;
+    text-transform: uppercase;
+  }
+}
+.header__menu-item + .header__menu-item{
+  margin-left: 50px;
+}
+.header__menu-link:hover{
+  padding: 42px 20px 40px;
+  margin: 0 -20px;
+  background-color: #131313;
+  color: #fff;
+}
+
+/*-----------------------------------------*/
+
+.bike{
+  margin-bottom: 150px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  &__column{
+    max-width: 630px;
+    width: 100%;
+  }
+  &__title{
+    font-size: 64px;
+    line-height: 120%;
+    font-weight: 700;
+    margin: 80px 0 5px;
+  }
+  &__subtitle{
+    font-size: 32px;
+    line-height: 120%;
+    font-weight: 400;
+    color: #6F6F6F;
+    margin-bottom: 60px;
+  }
+  &__text,
+  &__link{
+    max-width: 420px;
+    width: 100%;
+  }
+  &__slider-item{
+    max-width: 630px;
+    width: 100%;
+  }
+  &__list{
+    display: flex;
+    justify-content: space-around;
+    // align-items: flex-start;
+    padding-top: 25px;
+  }
+  &__item{
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    max-width: 160px;
+  }
+  &__item span{
+    display: block;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 400;
+    text-transform: lowercase;
+    padding-top: 5px;
+  }
+}
+.bike__text + .bike__text{
+  margin: 20px 0 80px;
+}
+.slick-dots{
+  position: absolute;
+}
+.bike__slider .slick-dots{
+  top: 50px;
+  right: 0;
+}
+.slick-dots li + li{
+  padding-top: 10px;
+}
+.slick-dots button{
+  font-size: 0;
+  width: 2px;
+  height: 25px;
+  background-color: #131313;
+  border-radius: 7px;
+}
+.slick-active button{
+  background-color:  #FF4040;
+}
+
+/*-----------------------------------------------*/
+
+.info{
+  margin-bottom: 150px;
+  &__inner{
+    display: flex;
+    gap: 60px;
+  }
+  &__img{
+    max-width: 570px;
+    width: 100%;
+    object-fit: cover;
+  }
+  &__list{
+    max-width: 490px;
+  }
+  &__item{
+    &:not(:last-child){
+      margin-bottom: 50px;
+    }
+  }
+  &__item-title{
+    margin-bottom: 10px;
+  }
+  &__item-text{
+    max-width: 450px;
+  }
+}
+
+/*-----------------------------------------------------*/
+
+.descr{
+  margin-bottom: 150px;
+  &__img{
+    max-width: 570px;
+    width: 100%;
+    align-self: center;
+    object-fit: cover;
+  }
+  &__title{
+    margin-bottom: 40px;
+  }
+  &__inner{
+    display: flex;
+    gap: 60px;
+  }
+  &__items{
+    max-width: 570px;
+    width: 100%;
+  }
+  &__list{
+    &:not(:last-child){
+      margin-bottom: 30px;
+    }
+  }
+  &__item-title{
+    width: 100%;
+    padding: 2px 2px;
+    background-color: #131313;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  &__item-line{
+    display: flex;
+    margin-bottom: 5px;
+
+  }
+  &__item-name,
+  &__item-descr{
+    flex-basis: 285px;
+  }
+  &__item-descr{
+    margin-left: 20px;
+  }
+}
+
+/*-------------------------------------------------*/
+
+.slider{
+  margin-bottom: 50px;
+  &__item{
+    padding-left: 50px;
+  }
+}
+.slider__items .slick-dots{
+  top: 0;
+}
+
+/*-------------------------------------------------*/
+
+.price{
+  margin-bottom: 100px;
+  &__inner{
+    position: relative;
+  }
+}
+.form{
+  max-width: 420px;
+  &__title{
+    margin-bottom: 40px;
+  }
+  &__text{
+    max-width: 300px;
+    margin-bottom: 30px;
+  }
+  &__input-name,
+  &__input-phone{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0 0 10px;
+    border-bottom: 1px solid #131313;
+    outline: none;
+  }
+  &__input-name::placeholder,
+  &__input-phone::placeholder,
+  &__input-text{
+    color: #6F6F6F;
+    opacity: 0.5;
+  }
+  &__input-text{
+    margin-bottom: 10px;
+  }
+  &__label-box{
+    display: flex;
+    margin-bottom: 50px;
+  }
+  &__label{
+    &:not(:last-child){
+      margin-right: 25px;
+    }
+  }
+  &__input-radio{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+  &__bike{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  &__bike-img{
+    max-width: 630px;
+    width: 100%;
+  }
+  &__bike-price{
+    font-size: 32px;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 220px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #FF4040;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    &::after{
+      content: '';
+      position: absolute;
+      width: 220px;
+      height: 100px;
+      top: 12px;
+      left: 0;
+      border: 1px solid #FF4040;
+      border-radius: 50%;
+    }
+  }
+  &__bike-price span{
+    padding-top: 15px;
+  }
+  &__radio-style{
+    width: 80px;
+    height: 12px;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  &__radio-style--grey{
+    background-color: #6F6F6F;
+  }
+  &__radio-style--white{
+    background-color: #fff;
+    border: 1px solid #131313;
+  }
+  &__radio-style--red{
+    background-color: #FF4040;
+  }
+}
+.form__input-radio:checked + .form__bike{
+  display: block;
+}
+
+/*---------------------------------------------*/
+.footer{
+  background-color: #131313;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+  &__link{
+    color: #fff;
+    font-size: 12px;
+    text-decoration: underline;
+    text-transform: lowercase;
+  }
+  &__social-link{
+    margin: 0 15px;
+  }
+  &__contacts-link{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    &:not(:last-child){
+      margin-bottom: 10px;
+    }
+  }
+  &__contacts-icon{
+    margin-right: 10px;
+  }
+}
